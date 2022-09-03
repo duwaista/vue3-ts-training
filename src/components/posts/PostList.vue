@@ -1,30 +1,25 @@
 <template>
-  <div v-if="loading">Loading...</div>
-  <div class="posts-container" v-if="!loading && posts.length">
-    <div v-for="post in posts">
-      <span>{{ post.email }}</span>
-      <img :src="post.posts">
+  <div class="">
+    <div v-if="loading">Loading...</div>
+    <div
+      class="posts-container"
+      v-if="!loading && posts.length"
+    >
+      <post-item v-for="post in posts" :item="post" :key="post.id" />
     </div>
   </div>
 </template>
 
-<script>
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import usePosts from "../../hooks/usePosts";
+import PostItem from "./PostItem.vue";
 
-export default defineComponent({
-  name: "PostList",
-  setup() {
-    const { loading, posts } = usePosts();
+const { loading, posts } = usePosts();
 
-    return {
-      loading,
-      posts
-    }
-  }
-})
 </script>
 
-<style scoped>
+<style>
+.posts-container {
 
+}
 </style>

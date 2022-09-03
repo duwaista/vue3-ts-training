@@ -1,8 +1,9 @@
-export interface IOldPost {
+export interface IPostItem {
+  id: number;
+  uid: string;
   avatarUrl: string | null;
   createdAt: string;
   email: string;
   posts: string;
-  uid: string;
-  _id: string;
+  type: 'image' | 'video';
 }

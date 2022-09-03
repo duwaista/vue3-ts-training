@@ -1,16 +1,17 @@
 <template>
-  <div>Крутые посты:</div>
-  <post-list />
+  <CommonPageLayout>
+    <Card>
+      <span>Круте посты:</span>
+    </Card>
+    <post-list />
+  </CommonPageLayout>
 </template>
 
-<script>
-import {defineComponent} from "vue";
+<script setup lang="ts">
 import PostList from "../components/posts/PostList.vue";
+import CommonPageLayout from "../components/CommonPage/CommonPageLayout.vue";
+import Card from "../components/UI/Card.vue";
 
-export default defineComponent({
-  name: "PostsView",
-  components: { PostList }
-})
 </script>
 
 <style scoped>
