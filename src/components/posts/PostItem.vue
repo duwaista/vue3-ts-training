@@ -15,7 +15,7 @@ import { IPostItem } from "../../types/posts";
 import Card from "../UI/Card.vue";
 
 defineProps<{
-  item: IPostItem;
+  item: IPostItem,
 }>();
 
 </script>

@@ -1,11 +1,17 @@
 <template>
   <div class="">
-    <div v-if="loading">Loading...</div>
+    <div v-if="loading">
+      Loading...
+    </div>
     <div
-      class="posts-container"
       v-if="!loading && posts.length"
+      class="posts-container"
     >
-      <post-item v-for="post in posts" :item="post" :key="post.id" />
+      <post-item
+        v-for="post in posts"
+        :key="post.id"
+        :item="post"
+      />
     </div>
   </div>
 </template>

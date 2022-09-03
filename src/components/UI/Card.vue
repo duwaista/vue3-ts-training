@@ -1,6 +1,9 @@
 <template>
   <div class="card-container">
-    <div v-if="slots.info || slots.actions" class="card-header-container">
+    <div
+      v-if="slots.info || slots.actions"
+      class="card-header-container"
+    >
       <div>
         <slot name="info" />
       </div>
