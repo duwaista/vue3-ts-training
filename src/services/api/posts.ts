@@ -34,10 +34,8 @@ class PostsAPIInstance extends API {
   }
 }
 
-// http://192.168.0.12:5000
-// https://quiet-ridge-83792.herokuapp.com/api
 const PostsAPI = new PostsAPIInstance({
-  baseURL: 'http://192.168.0.12:5000/api',
+  baseURL: 'https://quiet-ridge-83792.herokuapp.com/api',
 });
 
 export default PostsAPI;

@@ -1,7 +1,9 @@
 <template>
   <CommonPageLayout>
     <Card>
-      <span>Круте посты:</span>
+      <template v-slot:info>
+        <span>Круте посты:</span>
+      </template>
     </Card>
     <post-list />
   </CommonPageLayout>

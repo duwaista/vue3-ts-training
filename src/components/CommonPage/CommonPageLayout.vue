@@ -20,8 +20,15 @@
   display: flex;
   justify-content: center;
 }
-.common-page-content {
-  width: 60%;
-  max-width: 600px;
+@media screen and (min-width: 700px) {
+  .common-page-content {
+    width: 60%;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .common-page-content {
+    width: 96%;
+  }
 }
 </style>

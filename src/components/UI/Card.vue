@@ -24,16 +24,21 @@ const slots = useSlots();
 <style scoped>
 .card-container {
   width: 100%;
-  padding: 1em;
+  padding: 0 1em;
   margin: 1em 0;
   background-color: white;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
 }
+.card-container > div:first-of-type {
+  padding-top: 1em;
+}
+.card-container > div:last-of-type {
+  padding-bottom: 1em;
+}
 .card-header-container {
   display: flex;
-  padding-bottom: 1em;
   justify-content: space-between;
 }
 </style>

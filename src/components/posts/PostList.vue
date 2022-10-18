@@ -1,8 +1,8 @@
 <template>
   <div class="">
-    <div v-if="loading">
+    <Card v-if="loading">
       Loading...
-    </div>
+    </Card>
     <div
       v-if="!loading && posts.length"
       class="posts-container"
@@ -19,6 +19,7 @@
 <script setup lang="ts">
 import usePosts from "../../hooks/usePosts";
 import PostItem from "./PostItem.vue";
+import Card from "../UI/Card.vue";
 
 const { loading, posts } = usePosts();
 

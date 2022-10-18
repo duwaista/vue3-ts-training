@@ -1,3 +1,3 @@
-export const setPosts = (state, posts) => {
+export const setPosts = (state: any, posts: any) => {
   state.posts = posts;
 }
